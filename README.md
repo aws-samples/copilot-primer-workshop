@@ -1,13 +1,17 @@
-## My Project
+## AWS Copilot Primer Workshop
+This repository provides the contents for AWS Copilot Primer Workshop. 
 
-TODO: Fill this README out!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Be sure to:
+## Developer Guide
+The workshop is available at [here](NEED TO BE UPDATED).
 
-* Change the title in this README
-* Edit your repository description on GitHub
+## Prerequisites
+### AWS Account
+In order to complete this workshop you'll need a valid, usable AWS Account with Admin permissions. The code and instructions in this workshop assume only one person is using a given AWS account at a time. If you try sharing an account, you'll run into naming conflicts for certain resources.
 
-## Security
+### Browser
+We recommend you use the latest version of Chrome or Firefox to complete this workshop.
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
