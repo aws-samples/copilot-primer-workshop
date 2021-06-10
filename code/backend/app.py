@@ -30,7 +30,7 @@ def hello_world():
 def receive_health_check():
     return "Health check succeed\n"
 
-# curl -X POST -H "Content-type: application/json" -d '{"id": 3,"title": "Have fun", "done": "false"}'  http://localhost:10000/createtodo
+
 @app.route('/createtodo', methods=["POST", "OPTIONS"])
 @expects_json(schema, force=False)
 def create_todo():
@@ -55,7 +55,7 @@ def convert_from_response(item):
     }
     return todo
 
-# curl http://localhost:10000/alltodo
+
 @app.route('/alltodo')
 def get_alltodo():
     response = table.scan()
@@ -64,7 +64,7 @@ def get_alltodo():
     items = json.dumps(items)
     return items
 
-# curl -X POST -H "Content-type: application/json" -d '{"id": 1,"title": "Work From Home", "done": "true"}'  http://localhost:10000/updatetodo/1
+
 @app.route('/updatetodo/<path:todoid>', methods=['POST', 'OPTIONS'])
 def update_todo(todoid):
     if request.method == 'OPTIONS':
@@ -81,7 +81,7 @@ def update_todo(todoid):
         )
         return "Updated todo\n"
 
-# http://localhost:10000/deletetodo/2
+
 @app.route('/deletetodo/<path:todoid>')
 def delete_todo(todoid):
     table.delete_item(
