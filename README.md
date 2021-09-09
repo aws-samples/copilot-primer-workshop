@@ -1,6 +1,6 @@
 ## AWS Copilot Primer Workshop
 
-This repository provides the contents for AWS Copilot Primer Workshop. 
+This repository provides the contents for [AWS Copilot Primer Workshop](https://workshops.aws/card/Copilot%20Primer%20Workshop%20%28Japanese%29). 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
